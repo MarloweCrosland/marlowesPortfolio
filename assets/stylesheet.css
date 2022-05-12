@@ -2,3 +2,16 @@ body {
     background-image: url(./photos/background-image.jpg);
     background-repeat: no-repeat;
 }
+
+
+:root {
+    --heading-color: #834daa;
+    --transparent-color: #00d449;
+    --box-color: #010101;
+    --box--color-2: #434343;
+}
+
+
+.h3 {
+        color: var(--heading-color)
+}
