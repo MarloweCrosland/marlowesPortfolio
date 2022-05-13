@@ -25,16 +25,19 @@ nav ul li {
 
 #about-me {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me-box {
     background-image: url(./photos/background-image.jpg);
     background-color: transparent;
     
-
-
 }
 
+.self-portrait{
+    max-width: 30vw;
+    border-style: ridge;
+}
 .caption {
     color:var(--heading-color-t);
 }
