@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url(./photos/background-image.jpg);
     background-repeat: no-repeat;
@@ -16,14 +18,33 @@ body {
 }
 
 header {
+    padding: 20px 20px;
     background-color: var(--accent-color-t);
+    position: --webkit-sticky;
     position: sticky;
-    height
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+    z-index: 9999;
     
 }
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
+    list-style: none;
 
-nav ul li {
-    color:#010101
+}
+
+nav {
+    display:inline-block;
+}
+
+nav ul div li {
+    color:#010101;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #about-me, 
@@ -31,7 +52,12 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex: 0, 1, auto;
 
+}
+
+#about-me {
+    margin-top: 5vw;
 }
 
 .element-background{
@@ -58,8 +84,16 @@ nav ul li {
 
 .paragraph {
     color: var(--heading-color-t);
-    font-size: 1.5rem;
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.9rem;
+    font-family:Arial, Helvetica, sans-serif;
     max-width: 60vw;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 3vh;
+    
+
+
 }
 
