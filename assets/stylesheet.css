@@ -5,13 +5,14 @@ body {
 
 
 :root {
-    --heading-color: #834daa;
+    --heading-color: #f6f6f6;
     --transparent-color: #00d449;
     --box-color: #010101;
     --box--color-2: #434343;
+    --accent-color: #834daa;
 }
 
 
-.h3 {
-        color: var(--heading-color)
+.caption {
+    color:#f6f6f6;
 }
