@@ -1,4 +1,6 @@
-
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
 body {
     background-image: url(./photos/background-image.jpg);
@@ -14,7 +16,7 @@ body {
     --box-color: #010101;
     --box--color-2: #434343;
     --accent-color: #834daa;
-    --accent-color-t: rgba(132, 78, 170, 0.474);
+    --accent-color-t: rgba(132, 78, 170, 0.756);
 }
 
 header {
@@ -31,21 +33,37 @@ header {
 }
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
     align-items:flex-end;
     list-style: none;
 
 }
 
 nav {
-    display:inline-block;
+    display:flex;
 }
 
-nav ul div li {
+.navigation:hover + p {}
+
+.navigation{
     color:#010101;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    font-size:larger;
+    justify-content: space-around;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-stretch: semi-expanded;
+    font-weight: bold;
+    
+    }
+/*why is hover not working here ??*/
+
+    .navigation:hover {
+        font-stretch: extra-expanded;
+        
+        
+    }
 
 #about-me, 
 #my-work {
@@ -58,34 +76,59 @@ nav ul div li {
 
 #about-me {
     margin-top: 5vw;
+   
 }
 
 .element-background{
     background-image: url(./photos/background-image.jpg);
     background-color: transparent;
-    border-radius: 10%;
-    
+    border-radius: 1;
+    width: 98%;
+    justify-content: space-between;
+    display: flex;
 }
 
 
 
 #self-portrait{
-    max-width: 30vw;
-    border-radius: 10%;
+    max-width: 28vw;
+    border-radius: 50%;
+    margin-right: 3vw;
 }
 
-#self-portrait:hover{
-    box-shadow: #00d449;
+
+
+.disappearing-text{
+    text-align: center;
+    display: none;
+}
+
+#self-portrait:hover + .disappearing-text{
+    color: var(--accent-color);
+    text-align: center;
+    display:block;
     
 }
+
+
+.captioned-portrait {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
 .caption {
     color:var(--heading-color-t);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .paragraph {
     color: var(--heading-color-t);
-    font-size: 1.9rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 60vw;
     line-height: 1.8;
     text-align: justify;
@@ -97,3 +140,23 @@ nav ul div li {
 
 }
 
+#my-work {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#work-example-1,
+#work-example-2,
+#work-example-3 {
+    margin-top: 6vh;
+    max-width: 20vw;
+    border-radius: 1%;
+}
+
+
+#work-example-1:hover,
+#work-example-2:hover,
+#work-example-3:hover{
+    transform: scale(1.5);
+}
