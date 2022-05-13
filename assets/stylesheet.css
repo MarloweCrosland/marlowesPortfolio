@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
 }
 
+
 :root {
     --heading-color-t:  rgb(246, 246,246,0.72);
     --heading-color: #f6f6f6;
@@ -17,26 +18,39 @@ body {
 header {
     background-color: var(--accent-color-t);
     position: sticky;
+    height
+    
 }
 
 nav ul li {
     color:#010101
 }
 
-#about-me {
+#about-me, 
+#my-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 
-.about-me-box {
+.element-background{
     background-image: url(./photos/background-image.jpg);
     background-color: transparent;
+    border-radius: 10%;
     
 }
 
-.self-portrait{
+
+
+#self-portrait{
     max-width: 30vw;
-    border-style: ridge;
+    border-radius: 10%;
+}
+
+#self-portrait:hover{
+    box-shadow: #00d449;
+    
 }
 .caption {
     color:var(--heading-color-t);
@@ -44,4 +58,8 @@ nav ul li {
 
 .paragraph {
     color: var(--heading-color-t);
+    font-size: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 60vw;
 }
+
