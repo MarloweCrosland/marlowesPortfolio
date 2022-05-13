@@ -1,18 +1,44 @@
 body {
     background-image: url(./photos/background-image.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-
 :root {
+    --heading-color-t:  rgb(246, 246,246,0.72);
     --heading-color: #f6f6f6;
-    --transparent-color: #00d449;
+    --glow-color: #00d449;
     --box-color: #010101;
     --box--color-2: #434343;
     --accent-color: #834daa;
+    --accent-color-t: rgba(132, 78, 170, 0.474);
 }
 
+header {
+    background-color: var(--accent-color-t);
+    position: sticky;
+}
+
+nav ul li {
+    color:#010101
+}
+
+#about-me {
+    display: flex;
+}
+
+.about-me-box {
+    background-image: url(./photos/background-image.jpg);
+    background-color: transparent;
+    
+
+
+}
 
 .caption {
-    color:#f6f6f6;
+    color:var(--heading-color-t);
+}
+
+.paragraph {
+    color: var(--heading-color-t);
 }
