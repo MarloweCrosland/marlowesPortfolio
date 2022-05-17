@@ -3,33 +3,34 @@
 }
 
 body {
-    background-image: url(./photos/background-image.jpg);
+   background-color: var(--background-color);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 
 :root {
-    --heading-color-t:  rgb(246, 246,246,0.72);
+    --background-color:  rgba(255, 255, 255, 0.72);
     --heading-color: #f6f6f6;
-    --glow-color: #00d449;
-    --box-color: #010101;
-    --box--color-2: #434343;
-    --accent-color: #834daa;
-    --accent-color-t: rgba(132, 78, 170, 0.756);
+    --glow-color: #00a93b67;
+    --box-color: hsla(221, 100%, 85%, 0.295);
+    --transparent-blk: rgba(1, 1, 1, 0.756);
+    --box--color-2: #8e62f39c;
+    --accent-color: #ddb0fd;
+    --accent-color-t: rgba(102, 148, 255, 0.235);
 }
 
 header {
-    padding: 20px 20px;
-    background-color: var(--accent-color-t);
+    padding;
+    width: 100%;
+    background-color: var(--glow-color);
     position: --webkit-sticky;
     position: sticky;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: right;
     top: 0;
     z-index: 9999;
-    border-radius: 1;
     
 }
 
@@ -41,7 +42,6 @@ a{
 header nav ul {
     display: flex;
     
-    align-items:flex-end;
     list-style: none;
 
 }
@@ -52,10 +52,11 @@ nav {
 
 /* navigation text styles */
 header nav ul div a{
-    color:#010101;
+    color:#47a65f;
+    background-color:#fff;
+    display: inline-block;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: space-evenly;
-    
     padding-left: 12px;
     padding-right: 12px;
     letter-spacing: 1px;
@@ -63,30 +64,38 @@ header nav ul div a{
     text-decoration: none;
     font-size: 1.8rem;
     
+    
     }
 /*why is hover not working here ??*/
 header nav ul div a:hover{
     letter-spacing: 5px;
+    color: black;
 }
 
 
-#about-me, 
+ 
 #my-work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     flex: 0, 1, auto;
+    justify-content: space-around;
 
 }
 
 #about-me {
     margin-top: 5vw;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
    
 }
 
+
+
 .element-background{
-    background-image: url(./photos/background-image.jpg);
-    background-color: transparent;
+    
+    background-color: var(--accent-color-t);
     border-radius: 1;
     width: 98%;
     justify-content: space-between;
@@ -97,7 +106,7 @@ header nav ul div a:hover{
 
 #self-portrait{
     max-width: 28vw;
-    border-radius: 50%;
+    border-radius: 10%;
     margin: 3vw 3vh 3vw 3vh;
 }
 
@@ -106,12 +115,13 @@ header nav ul div a:hover{
 .disappearing-text{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
-    color:#834daa;
-    text-shadow: 1px 1px var(--heading-color-t);
+    font-size: 1.5srem;
+    color:#000000;
+    text-shadow: 1px 1px var(--accent-color-t);
 }
 
 #self-portrait:hover + .disappearing-text{
-    color: var(--heading-color);
+    color:#47a65f;
     
 }
 
@@ -125,7 +135,7 @@ header nav ul div a:hover{
 
 
 .caption {
-    color:var(--heading-color-t);
+    color: var(--glow-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
@@ -147,8 +157,8 @@ header nav ul div a:hover{
 .samples{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 0, 1;
+    
+    
     
 }
 
@@ -164,8 +174,104 @@ header nav ul div a:hover{
 
 #work-example-1:hover,
 #work-example-2:hover,
-#work-example-3:hover{
+#work-example-3:hover {
     transform: scale(1.5);
 
 
+}
+
+
+
+.contact-info {
+    background-color: var(--accent-color-t);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    margin-top: 15vh;
+    margin-left: 15vw;
+    
+
+    
+}
+
+
+.contact-info h2 {
+    color: var(--heading-color);
+    align-items: center;
+    margin-left: 10vw;
+    font-size: 10rem;
+    line-height: .5;
+    position: relative;
+    bottom: 15vh;
+    
+}
+
+#contact-form {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--transparent-blk);
+    
+}
+
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+
+display: block;
+font-size: 2rem;
+margin-left: 5vh;
+line-height: 1.5;
+}
+
+
+#contact-form textarea {
+   
+}
+
+
+#contact-form button {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+
+#contact-form button:hover {
+    background: #6B9FFF;
+	color:#fff;
+}
+
+
+footer {
+    background-color: var(--glow-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer img {
+
+    max-width: 5vw;
+
+}
+
+
+footer p{
+    color: #fff;
+    background-color: #47a65f;
+    display: inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-evenly;
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
 }
