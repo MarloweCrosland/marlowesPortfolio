@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    padding;
+    padding-bottom: 5vh;
     width: 100%;
     background-color: var(--glow-color);
     position: --webkit-sticky;
@@ -165,15 +165,27 @@ header nav ul div a:hover{
     
 }
 
+#work-example-1{
+
+max-width: 400px;
+
+}
+
+
+
+#work-example-2,
+#work-example-3 {
+   max-width: 20vw;
+
+}
+
 
 #work-example-1,
 #work-example-2,
-#work-example-3 {
-    margin-top: 6vh;
-    max-width: 20vw;
-    border-radius: 1%;
+#work-example-3{
+margin-top: 5vh;
+border-radius: 1%;
 }
-
 
 #work-example-1:hover,
 #work-example-2:hover,
@@ -260,6 +272,8 @@ footer {
     background-color: var(--glow-color);
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 
