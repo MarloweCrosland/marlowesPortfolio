@@ -1,4 +1,8 @@
 # marlowesPortfolio
+
+this website can be found at : https://marlowecrosland.github.io/marlowesPortfolio/
+
+
 this is marlowes portfolio to showcase her projects to potential employers
 so they can then review samples of her work and assess whether shes a good candidate for an open position
 
